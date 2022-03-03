@@ -23,6 +23,7 @@ header img {
   width: 75px;
   float: left;
   margin-right: 10px;
+  border-radius: 50%;
 }
 section h2 {
   margin: 5px 0 0 0;
@@ -73,4 +74,22 @@ footer {
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1em;
+}
+
+/*cookingrecipe style*/
+.cookingrecipe {
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  float:left;
+}
+aside {
+  background-color: lightgray;
+  font-size: 1em;
+  width: 28%;
+}
+section ul{
+      overflow: hidden;
+      margin: 0px;
 }
