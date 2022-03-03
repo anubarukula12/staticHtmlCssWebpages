@@ -31,7 +31,7 @@ section h2 {
   font-size: 1.8em;
 }
 
-section img {
+.parimg {
   width: 400px;
   height: 200px;
   float: right;
@@ -77,19 +77,98 @@ p {
 }
 
 /*cookingrecipe style*/
-.cookingrecipe {
+.recipeslist {
+  margin-top: 2em;
+  margin-left: 2em;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.recipe-img {
   width: 400px;
   height: 200px;
-  margin-bottom: 20px;
   overflow: hidden;
-  float:left;
 }
-aside {
-  background-color: lightgray;
+.recipe-link {
+  text-decoration: none;
+  text-align: center;
+}
+.recipes h2 {
+  margin: 5px 0 0 0;
+  color: rgb(202, 68, 19);
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: 3em;
+}
+.recipes p {
   font-size: 1em;
-  width: 28%;
 }
-section ul{
-      overflow: hidden;
-      margin: 0px;
+
+/*Movie Summary Styles*/
+.movie-list {
+  margin-top: 2em;
+  margin-left: 2em;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  font-family: sans-serif;
+}
+.checked {
+  color: orange;
+}
+.rating-chk {
+  padding-left: 50px;
+}
+.movie-img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+/* CarListings Styles*/
+
+.car-container {
+  display: flex;
+  justify-content: center;
+}
+.car-image {
+  height: 180px;
+  padding-top: 25px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.car-card {
+  background-color: hsl(16, 97%, 66%);
+
+  margin: 10px;
+  border-radius: 20px;
+}
+.car-1 {
+  background-image: url(../images/cars/ferrari.jpeg);
+}
+.car-2 {
+  background-image: url(../images/cars/nissanpathfinder.jpg);
+}
+.car-3 {
+  background-image: url(../images/cars/tesla.jpeg);
+}
+.car-4 {
+  background-image: url(../images/cars/toyatohighlander.jpeg);
+}
+.car-container h1 {
+  font-size: 2em;
+  font-family: "Times New Roman", Times, serif;
+  color: aquamarine;
+  margin-top: 20px;
+  text-align: center;
+}
+.car-container p {
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  color:black;
 }
