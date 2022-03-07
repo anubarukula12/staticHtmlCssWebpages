@@ -19,10 +19,12 @@ In CookingRecipe and MovieSummary the images are links which navigate through th
 - Open the project in the vscode.
 - Select index.html
 and run in the open with Live Server. 
+
 ---
 # *Known Bugs*
 some screens have device compatability issues
  working on them.
+ 
  ---
 
  # License
