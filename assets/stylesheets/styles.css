@@ -1,4 +1,4 @@
-body {
+html {
   font-family: "Times New Roman", Times, serif;
 }
 header {
@@ -19,8 +19,8 @@ header h2 {
   font-size: 1.2em;
 }
 header img {
-  height: 75px;
-  width: 75px;
+  width: 15vh;
+  height: 15vh;
   float: left;
   margin-right: 10px;
   border-radius: 50%;
@@ -77,7 +77,7 @@ p {
 }
 
 /*cookingrecipe style*/
-.recipeslist {
+.recipes-list {
   margin-top: 2em;
   margin-left: 2em;
   max-width: 1500px;
@@ -88,8 +88,8 @@ p {
 }
 
 .recipe-img {
-  width: 400px;
-  height: 200px;
+  width: 50vh;
+  height: 30vh;
   overflow: hidden;
 }
 .recipe-link {
@@ -107,6 +107,29 @@ p {
   font-size: 1em;
 }
 
+/* chicken recipe styles*/
+small {
+  line-height: 1.5;
+  display: inline-block;
+  color: #6c757d;
+}
+.recipe-ingredient {
+  position: relative;
+  display: block;
+  padding: 0.1rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0, 0, 125);
+}
+.recipe-instructions {
+  position: relative;
+  list-style: none;
+  background: #f6f6f6;
+  margin: 0;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
 /*Movie Summary Styles*/
 .movie-list {
   margin-top: 2em;
@@ -161,14 +184,12 @@ p {
 }
 .car-container h1 {
   font-size: 2em;
-  font-family: "Times New Roman", Times, serif;
   color: white;
   margin-top: 20px;
   text-align: center;
 }
 .car-container p {
   margin: 10px;
-  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
-  color:black;
+  color: black;
 }
