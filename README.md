@@ -22,7 +22,7 @@ and run in the open with Live Server.
 ---
 # *Known Bugs*
 some screens have device compatability issues
- 
+ working on them.
  ---
 
  # License
