@@ -2,70 +2,87 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Css WebPage</title>
     <link href="../assets/stylesheets/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <img src="../assets/images/homepage/logo.jpeg">
-        <h1>How to create WebPage </h1>
-        <h2>Using HTML and CSS</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cookingrecipe.html">Cooking Recipes </a></li>
-            <li><a href="moviesummaryr.html">Movie Summary</a></li>
-            <li><a href="carlistings.html">Car listings</a></li>
-        </ul>
-    </nav>
-    <section class="recipes">
-        <div class="recipes-list">
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img
-                        src="../assets/images/recipes/spicychickencurry.jpg" alt="food" class="recipe-img"> </a>
-                <h2>spicychickencurry</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+    <div class="grid-container">
+        <header>
+            <img src="../assets/images/homepage/logo.jpeg">
+            <h3>WebPage Using HTML and CSS</h3>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cookingrecipe.html">Cooking </a></li>
+                <li><a href="moviesummaryr.html">Movie</a></li>
+                <li><a href="carlistings.html">Car listings</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section class="recipes">
+            <div class="recipes-flex">
+                <div class="recipes-flex-item1">
+                    <h2>SpicyChickenCurry</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img
+                            src="../assets/images/recipes/spicychickencurry.jpg" alt="food" class="recipe-img"> </a>
+                  <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
+                <div class="recipes-flex-item2">
+                    <h2>EggGravy</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img
+                            src="../assets/images/recipes/egggravy recipe.jpg" alt="food" class="recipe-img"></a>
+                   <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
+                <div class="recipes-flex-item3">
+                    <h2>TomatoPickle</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img
+                            src="../assets/images/recipes/tomatopicklerecipe.jpg" alt="food" class="recipe-img"></a>
+                   <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
+                <div class="recipes-flex-item4">
+                    <h2>MangoPickle</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img src="../assets/images/recipes/mangopickle.jpg"
+                            alt="food" class="recipe-img"></a>
+                    <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
+                <div class="recipes-flex-item5">
+                    <h2>Idli</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img src="../assets/images/recipes/idlirecipe.jpg"
+                            alt="food" class="recipe-img"> </a>
+                       <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
+                <div class="recipes-flex-item6">
+                    <h2>MysoreMasalaDosa</h2>
+                    <a href="chickenrecipe.html" class="recipe-link"><img
+                            src="../assets/images/recipes/mysoremasaladosa.jpg" alt="food" class="recipe-img"> </a>
+                    <p id="recipe-para">prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+                </div>
             </div>
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img src="../assets/images/recipes/egggravy recipe.jpg"
-                        alt="food" class="recipe-img"></a>
-                <h2>egggravy</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+        </section>
+        <footer class="footer-nav">
+            <div class="footer-flex1">
+                <ul>
+                    <li><a href="">AboutUs</a></li>
+                    <li><a href="">ContactUs</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img
-                        src="../assets/images/recipes/tomatopicklerecipe.jpg" alt="food" class="recipe-img"></a>
-                <h2>tomatopickle</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="">Meet the Team</a></li>
+                    <li><a href="schedule.html">Schedule Time</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img src="../assets/images/recipes/mangopickle.jpg"
-                        alt="food" class="recipe-img">
-
-                </a>
-                <h2>mangopickle</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Customer Testimonals</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img src="../assets/images/recipes/idlirecipe.jpg"
-                        alt="food" class="recipe-img"> </a>
-                <h2>idli</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
-            </div>
-            <div>
-                <a href="chickenrecipe.html" class="recipe-link"><img
-                        src="../assets/images/recipes/mysoremasaladosa.jpg" alt="food" class="recipe-img"> </a>
-                <h2>mysoremasaladosa</h2>
-                <p>prepare time:15min | cooktime:60min | serves:6 | cuisine:Andhra</p>
-            </div>
-    </section>
-    <footer>
-        <p>Copyright © 2022 Anuradha Barukula</p>
-        </p>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
