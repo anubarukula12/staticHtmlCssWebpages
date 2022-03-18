@@ -1,174 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 html {
-  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  font-family: Roboto;
+  color: #333;
+  position: relative;
 }
-header {
-  background-color: rgb(202, 68, 19);
-  color: white;
-  padding: 10px;
-  margin: 0;
-  overflow: hidden;
+body {
+  background: #ccc;
+  margin: 30px 50px;
+  line-height: 1.6;
 }
-header h1 {
-  padding: 0;
+h3 {
   margin: 0;
-  font-size: 2.2em;
-}
-header h2 {
-  padding: 0;
-  margin: 0;
+  font-family: Roboto;
   font-size: 1.2em;
+  display: block;
+}
+.grid-container {
+  display: grid;
+  width: auto;
+}
+/*mobile styles*/
+/*header styles*/
+header {
+  width: 290px;
+  background-color: #333;
+  color: #fff;
+  margin: 0px;
 }
 header img {
-  width: 15vh;
-  height: 15vh;
+  height: 10vh;
+  width: 10vh;
   float: left;
-  margin-right: 10px;
   border-radius: 50%;
 }
-section h2 {
-  margin: 5px 0 0 0;
-  color: rgb(202, 68, 19);
-  font-size: 1.8em;
-}
 
+/*Navigation styles*/
+.main-nav ul {
+  display: grid;
+  gap: 10px;
+  width: 250px;
+  padding: 1.5rem;
+  margin: 0;
+  list-style: none;
+}
+.main-nav a {
+  background: #ddd;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(104, 104, 104, 0.938);
+}
+.main-nav a:hover {
+  background: #333;
+  color: #fff;
+}
+/*section styles*/
+section h2 {
+  margin: 0;
+  padding: 1rem;
+}
 .parimg {
-  width: 400px;
-  height: 200px;
-  float: right;
-  margin: 10px;
+  width: 36vh;
+  height: 15vh;
   box-shadow: 2px 2px 2px 1px;
 }
-nav ul {
-  list-style-type: none;
-  background-color: hsl(16, 97%, 66%);
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-nav li {
-  float: left;
-}
-nav li a {
-  text-decoration: none;
-  padding: 10px 25px;
-  display: block;
-  color: black;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.5em;
-}
-nav li a:hover {
-  background-color: rgb(86, 113, 165);
-}
-section {
-  padding: 0 10px;
-  border: 3px solid rgb(202, 68, 19);
-}
-footer {
-  background-color: rgb(202, 68, 19);
-  color: white;
-  padding: 10px;
-  margin: 0px;
+#car-list-para {
+  width: 255px;
   text-align: center;
   font-size: 1em;
+  padding: 1rem;
+  margin: 0;
 }
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1.1em;
-}
-
-/*cookingrecipe style*/
-.recipes-list {
-  margin-top: 2em;
-  margin-left: 2em;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  font-family: sans-serif;
-}
-
-.recipe-img {
-  width: 50vh;
-  height: 30vh;
-  overflow: hidden;
-}
-.recipe-link {
-  text-decoration: none;
-  text-align: center;
-}
-.recipes h2 {
-  margin: 5px 0 0 0;
-  color: rgb(202, 68, 19);
-  font-size: 1.5em;
-  text-align: center;
-  margin-right: 3em;
+.recipes-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .recipes p {
-  font-size: 1em;
+  font-family: Roboto;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0px;
+}
+.recipes img {
+  width: 45vh;
+  height: 25vh;
+}
+.recipes h2 {
+  font-family: Roboto;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+/*footer styles*/
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  background: #333;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+
+  padding: 2rem;
+}
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-nav a:hover {
+  background: #333;
+  color: #fff;
 }
 
-/* chicken recipe styles*/
-small {
-  line-height: 1.5;
-  display: inline-block;
-  color: #6c757d;
+/*movie list styles*/
+.movie-list-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.recipe-ingredient {
-  position: relative;
-  display: block;
-  padding: 0.1rem 1.25rem;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0, 0, 125);
-}
-.recipe-instructions {
-  position: relative;
-  list-style: none;
-  background: #f6f6f6;
-  margin: 0;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-/*Movie Summary Styles*/
-.movie-list {
-  margin-top: 2em;
-  margin-left: 2em;
-  max-width: 1500px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  font-family: sans-serif;
+.movie-list-flex img {
+  width: 45vh;
+  height: 25vh;
+  margin-right: 20px;
 }
 .checked {
   color: orange;
 }
 .rating-chk {
-  padding-left: 50px;
-}
-.movie-img {
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
+  text-align: center;
 }
 
-/* CarListings Styles*/
-
+/* car container*/
 .car-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
+.car-flex {
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.car-section h1 {
+  font-size: 2em;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+}
+.car-section p {
+  font-size: 1.5rem;
+  color: rgb(110, 89, 89);
+  font-family: Roboto;
+  padding-right: 10px 0px 0px 0px;
+}
 .car-image {
-  height: 180px;
+  height: 185px;
+  width: 300px;
   padding-top: 25px;
   background-size: cover;
   border-radius: 15px 15px 0 0;
-}
-.car-card {
-  background-color: hsl(16, 97%, 66%);
-
-  margin: 10px;
-  border-radius: 20px;
 }
 .car-1 {
   background-image: url(../images/cars/ferrari.jpeg);
@@ -182,14 +186,572 @@ small {
 .car-4 {
   background-image: url(../images/cars/toyatohighlander.jpeg);
 }
-.car-container h1 {
-  font-size: 2em;
+/*Registration form css*/
+.reg-section h1 {
+  text-align: center;
+  font-family: Roboto;
+  color: #ddd;
+}
+
+.register-container {
+  display: flex;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  width: 18rem;
+  height: 35em;
+  margin-bottom: 20px;
+}
+
+label {
   color: white;
-  margin-top: 20px;
+  font-size: 18px;
+}
+#name {
+  width: 270px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+}
+#mob-num {
+  width: 55px;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
+#number {
+  width: 210px;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
+#i-email {
+  width: 270px;
+  padding: 7px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
+
+/*schedule time styles*/
+.sched-container {
+  display: flex;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  width: 18rem;
+  height: 26em;
+  margin-bottom: 20px;
+}
+.schedule-section h1 {
+  text-align: center;
+  font-family: Roboto;
+  color: #ddd;
+  margin: 0;
+}
+#date,
+#time {
+  width: 270px;
+  padding: 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
+.time-zone {
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
+}
+textarea {
+  width: 280px;
+}
+#sub {
+  width: 286px;
+  padding: 7px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  outline: 0;
   text-align: center;
 }
-.car-container p {
-  margin: 10px;
-  font-size: 25px;
-  color: black;
+/* contactus styles*/
+.contact-container {
+  display: flex;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 10px;
+  width: 18rem;
+  height: 24em;
+  margin-bottom: 20px;
+}
+.contact-section h1 {
+  text-align: center;
+  font-family: Roboto;
+  color: #ddd;
+  margin: 0;
+}
+
+/*FAQ styles*/
+.accordion-button:not(.collapsed) {
+  background-color: #333;
+  color: #ccc;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+  width: 95%;
+}
+.accordian-section {
+  padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 500px) {
+  .grid-container {
+    display: grid;
+    width: auto;
+  }
+  header {
+    width: 44rem;
+    background-color: #333;
+    color: #fff;
+    margin: 0px;
+  }
+  .main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 715px;
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+  }
+
+  .parimg {
+    width: 60vh;
+    height: 25vh;
+    box-shadow: 2px 2px 2px 1px;
+  }
+  #car-list-para {
+    width: 45rem;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1rem;
+    margin: 0;
+  }
+  .recipes-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .recipes img {
+    width: 61vh;
+    height: 25vh;
+  }
+  .recipes p {
+    font-family: Roboto;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 0px;
+  }
+  .recipes h2 {
+    font-family: Roboto;
+    font-size: 3em;
+    font-weight: 600;
+    padding: 0;
+    margin-top: 1em;
+  }
+  .movie-list-flex img {
+    width: 55vh;
+    height: 25vh;
+    margin-top: 25px;
+  }
+  .car-container {
+    display: flex;
+    margin-top: 2em;
+  }
+  .car-image {
+    height: 25em;
+    width: 48em;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .car-flex {
+    background-color: black;
+    margin-bottom: 30px;
+    border-radius: 30px;
+  }
+  .car-section p {
+    font-size: 1.8rem;
+    color: rgb(110, 89, 89);
+    font-family: Roboto;
+    margin: 0px;
+  }
+  .register-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 35em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 12em;
+  }
+  .contact-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 24em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 12em;
+  }
+  .sched-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 26em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 12em;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background: #333;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    padding: 2rem;
+    margin-right: 2.4em;
+  }
+  section p {
+    padding: 0px;
+    margin-right: 2.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .accordian-section {
+    width: 40em;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+  }
+}
+
+/*Desktop css*/
+@media only screen and (min-width: 900px) {
+  html {
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #333;
+  }
+  body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.6;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 20px;
+    width: auto;
+  }
+
+  /*header styles*/
+  header {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0.1em;
+    width: 90rem;
+  }
+  header img {
+    width: 15vh;
+    height: 15vh;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  /* para image*/
+  .parimg {
+    width: 40em;
+    height: 10em;
+    float: left;
+    margin-left: 25em;
+    box-shadow: 2px 2px 2px 1px;
+  }
+  header p {
+    width: 90rem;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  /*Navigation styles*/
+  .main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90rem;
+  }
+  .main-nav a {
+    background: #ddd;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.938);
+  }
+  .main-nav a:hover {
+    background: #333;
+    color: #fff;
+  }
+
+  /*cooking recipes section*/
+  .recipes img {
+    width: 45vh;
+    height: 45vh;
+  }
+  .recipes-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  #recipe-para {
+    font-family: Roboto;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 0px;
+    width: 22em;
+  }
+
+  .recipes h2 {
+    font-family: Roboto;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  /*movie list styles*/
+  .movie-list-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+  }
+  .checked {
+    color: orange;
+  }
+  .rating-chk {
+    text-align: center;
+  }
+
+  /* car container*/
+  .car-container {
+    display: flex;
+    flex-direction: row !important;
+  }
+  .car-flex {
+    background-color: black;
+    margin: 10px;
+    border-radius: 20px;
+    width: 20rem;
+    height: 65rem;
+  }
+
+  .car-container h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .car-container p {
+    margin: 10px;
+    font-size: 1.5rem;
+    color: rgb(110, 89, 89);
+    font-family: Roboto;
+    width: 230px;
+  }
+  #car-list-para {
+    width: 12em;
+    font-family: Roboto;
+  }
+  .car-image {
+    width: 20rem;
+    height: 180px;
+    padding-top: 25px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .car-1 {
+    background-image: url(../images/cars/ferrari.jpeg);
+  }
+  .car-2 {
+    background-image: url(../images/cars/nissanpathfinder.jpg);
+  }
+  .car-3 {
+    background-image: url(../images/cars/tesla.jpeg);
+  }
+  .car-4 {
+    background-image: url(../images/cars/toyatohighlander.jpeg);
+  }
+  /*Registration form css*/
+  .reg-section h1 {
+    text-align: center;
+    font-family: Roboto;
+    color: #ddd;
+  }
+
+  .reg-section {
+    margin-left: 500px;
+  }
+
+  .register {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 20rem;
+    height: 35em;
+  }
+
+  label {
+    color: white;
+    font-size: 18px;
+  }
+  #name {
+    width: 270px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+  }
+  #mob-num {
+    width: 56px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+  }
+  #number {
+    width: 212px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+  }
+  #i-email {
+    width: 270px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+  }
+  #sub {
+    padding: 7px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    text-align: center;
+  }
+  .register-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 35em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 2em;
+  }
+  .contact-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 24em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 35em;
+  }
+  .sched-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    width: 18rem;
+    height: 26em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 35em;
+  }
+  /*FAQ styles*/
+  .accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: #ccc;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    width: 50%;
+  }
+
+  /*footer styles*/
+
+  .footer-nav {
+    display: flex;
+    background: #333;
+    text-transform: uppercase;
+    font-size: 1rem;
+    gap: 10rem;
+    flex-grow: 5;
+    padding: 2rem;
+    height: 100%;
+  }
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-nav a:hover {
+    background: #333;
+    color: #fff;
+  }
+  .footer-nav:nth-last-of-type(1) {
+    justify-content: center;
+  }
+  .accordian-section {
+    width: 70em;
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-bottom: 1em;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #333;
+    color: #ccc;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    width: 100%;
+  }
 }
