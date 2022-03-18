@@ -6,7 +6,8 @@
 ---
 
 # *Description*
-This Static HTML webPage demonstrates the Semantic HTML syntax and structure.
+
+This Static HTML webPage demonstrates the Semantic HTML syntax and structure with Responsive Layout.
 
 We can navigate through the links of Home CookingRecipes Moviesummary and Carlistings which display some content and images.
 
@@ -15,17 +16,15 @@ In CookingRecipe and MovieSummary the images are links which navigate through th
 ---
 
 # *Setup/Installation Requirements*
-- Clone the repository to your desktop.
+- Clone the repositiry to your desktop.
 - Open the project in the vscode.
 - Select index.html
 and run in the open with Live Server. 
-
 ---
 # *Known Bugs*
-some screens have device compatability issues
- working on them.
+No bugs as of now
  
  ---
 
- # License
+ # Lincense
  Copyright © 2022 Anuradha Barukula
