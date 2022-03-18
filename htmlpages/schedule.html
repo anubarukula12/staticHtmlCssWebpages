@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Css WebPage</title>
+    <link href="../assets/stylesheets/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <img src="../assets/images/homepage/logo.jpeg">
+            <h3>WebPage Using HTML and CSS</h3>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cookingrecipe.html">Cooking </a></li>
+                <li><a href="moviesummaryr.html">Movie</a></li>
+                <li><a href="carlistings.html">Car listings</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section>
+
+            <div class="sched-container">
+                <div class="schedule-section">
+                    <form method="post" id="schedule" action="">
+                        <h1> Scheduling Form</h1>
+                        <label for="date">Date</label>
+                        <input id="date" type="date"><br>
+                        <label for="time">Time</label>
+                        <input id="time" type="time"><br>
+                        <label for="timezone">Timezone</label>
+                        <select name="timezone" class="time-zone">
+                            <option>
+                                (GMT -8:00) Pacific Time (US &amp; Canada)
+                            </option>
+                            <option value="-7">
+                                (GMT -7:00) Mountain Time (US &amp; Canada)
+                            </option>
+                            <option value="-6">
+                                (GMT -6:00) Central Time (US &amp; Canada),
+                                Mexico City
+                            </option>
+                            <option value="-5">
+                                (GMT -5:00) Eastern Time (US &amp; Canada),
+                                Bogota, Lima
+                            </option>
+
+                            <option value="5.5">
+                                (GMT +5:30) Mumbai, Kolkata, Chennai, New Delhi
+                            </option>
+
+                        </select><br><br>
+                        <textarea placeholder="Enter Message" cols="50" rows="5"></textarea><br>
+                        <input type="submit" id="sub" value="Schedule">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-nav">
+            <div class="footer-flex1">
+                <ul>
+                    <li><a href="aboutus.html">AboutUs</a></li>
+                    <li><a href="contactus.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="meettheteam.html">Meet the Team</a></li>
+                    <li><a href="schedule.html">Schedule Time</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="customertestimonals.html">Customer Testimonals</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
