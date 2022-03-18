@@ -2,69 +2,105 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html Css WebPage</title>
     <link href="../assets/stylesheets/styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <img src="../assets/images/homepage/logo.jpeg">
-        <h1>How to create WebPage </h1>
-        <h2>Using HTML and CSS</h2>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cookingrecipe.html">Cooking Recipes </a></li>
-            <li><a href="moviesummaryr.html">Movie Summary</a></li>
-            <li><a href="carlistings.html">Car listings</a></li>
-        </ul>
-    </nav>
-    <section class="car-container">
-        <div class="car-card">
-            <div class="car-image car-1"></div>
-            <h1>Ferrari</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum suscipit
-                velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo reiciendis hic,
-                molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit veritatis
-                soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
-            </p>
-
-        </div>
-        <div class="car-card">
-            <div class="car-image car-2"></div>
-            <h1>NissanPathFinder</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum suscipit
-                velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo reiciendis hic,
-                molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit veritatis
-                soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
-            </p>
-
-        </div>
-        <div class="car-card">
-            <div class="car-image car-3"></div>
-            <h1>Tesla</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum suscipit
-                velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo reiciendis hic,
-                molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit veritatis
-                soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
-            </p>
-        </div>
-        <div class="car-card">
-            <div class="car-image car-4"></div>
-            <h1>ToyotoHighLander</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum suscipit
-                velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo reiciendis hic,
-                molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit veritatis
-                soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
-            </p>
-    </section>
-
-    <footer>
-        <p>Copyright © 2022 Anuradha Barukula</p>
-        </p>
-    </footer>
+    <div class="grid-container">
+        <header>
+            <img src="../assets/images/homepage/logo.jpeg">
+            <h3>WebPage Using HTML and CSS</h3>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cookingrecipe.html">Cooking </a></li>
+                <li><a href="moviesummaryr.html">Movie </a></li>
+                <li><a href="carlistings.html">Car listings</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <section class="car-section">
+            <div class="car-container">
+                <div class="car-flex">
+                    <div class="car-image car-1"></div>
+                    <div class="car-para">
+                        <h1>Ferrari</h1>
+                        <p id="car-list-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum
+                            suscipit
+                            velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo
+                            reiciendis
+                            hic,
+                            molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit
+                            veritatis
+                            soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
+                        </p>
+                    </div>
+                </div>
+                <div class="car-flex">
+                    <div class="car-image car-2"></div>
+                    <h1>NissanPathFinder</h1>
+                    <p id="car-list-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum
+                        suscipit
+                        velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo
+                        reiciendis
+                        hic,
+                        molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit
+                        veritatis
+                        soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
+                    </p>
+                </div>
+                <div class="car-flex">
+                    <div class="car-image car-3"></div>
+                    <h1>Tesla</h1>
+                    <p id="car-list-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum
+                        suscipit
+                        velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo
+                        reiciendis
+                        hic,
+                        molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit
+                        veritatis
+                        soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
+                    </p>
+                </div>
+                <div class="car-flex">
+                    <div class="car-image car-4"></div>
+                    <h1>ToyotoHighLander</h1>
+                    <p id="car-list-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus veniam odio quos laborum
+                        suscipit
+                        velit, dolores inventore a magni quibusdam cum magnam quas, consectetur minus esse illo
+                        reiciendis
+                        hic,
+                        molestiae officia temporibus. Debitis autem commodi maxime quis repudiandae earum suscipit
+                        veritatis
+                        soluta? Corrupti repellat qui quibusdam cum culpa deleniti dignissimos?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-nav">
+            <div class="footer-flex1">
+                <ul>
+                    <li><a href="aboutus.html">AboutUs</a></li>
+                    <li><a href="contactus.html">ContactUs</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="meettheteam.html">Meet the Team</a></li>
+                    <li><a href="schedule.html">Schedule Time</a></li>
+                </ul>
+            </div>
+            <div class="footer-flex2">
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="customertestimonals.html">Customer Testimonals</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
